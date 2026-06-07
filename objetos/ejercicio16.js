@@ -13,7 +13,7 @@
 let alumnos = [
     { nombre: "Adri", nota: 5},
     { nombre: "Juan", nota: 3},
-    { nombre: "Ana", nota: 4},
+    { nombre: "Ana", nota: 4}
 ]
 
 let aprobados = [];
