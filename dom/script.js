@@ -55,3 +55,24 @@ obtenerBoton.addEventListener("click", () => {
     obtenerElementoh1.textContent = "Evento ejecutado correctamente";
     console.log(obtenerBoton);
 });
+
+/*
+    1) Obtener el h1.
+    2) Obtener el input.
+    3) Obtener el botón.
+    4) Agregar un evento click al botón.
+    5) Cuando se haga click, mostrar en consola el valor escrito en el input.
+    6) Cambiar el texto del h1 a:
+    "Hola " + nombreIngresado
+    Ejemplo:
+    Hola Adri
+*/
+
+let obtenerIdTituloh1 = document.getElementById("tituloInput");
+let obtenerInput = document.getElementById("nombre");
+let obtenerBotonBtnSaludar = document.getElementById("btnSaludar");
+
+obtenerBotonBtnSaludar.addEventListener("click", () => {
+    console.log(obtenerInput.value);
+    obtenerIdTituloh1.textContent = "Hola " + obtenerInput.value;
+});
