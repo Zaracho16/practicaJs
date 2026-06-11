@@ -77,3 +77,21 @@ Mostrar en el h1:
 8) Colocar dentro del li el texto ingresado.
 9) Agregar el li dentro del ul.
 10) Limpiar el input después de agregar la tarea.
+
+
+-----Ejercicio 6-----
+1) Seguir agregando.
+2) Crear un botón para cada tarea nueva.
+    Texto del botón:
+    "Eliminar"
+3) Agregar el botón dentro del mismo li.
+4) Agregar un evento click al botón eliminar.
+5) Cuando se haga click:
+    Eliminar la tarea correspondiente.
+6) Verificar que se puedan agregar varias tareas.
+7) Verificar que cada botón elimine solamente su propia tarea.
+8) Limpiar el input después de agregar.
+9) Mantener la validación de input vacío.
+10) Mostrar en consola:
+    "Tarea eliminada"
+    cuando se elimine una tarea.

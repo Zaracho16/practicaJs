@@ -69,8 +69,17 @@ obtBoton5.addEventListener("click", () => {
         alert("Debe ingresar una tarea");
     } else {
         let nuevoLi = document.createElement("li");
-        nuevoLi.textContent = obtInput5.value;
-        obtLista5.appendChild(nuevoLi); // agregamos el li dentro del ul
+        nuevoLi.textContent = obtInput5.value + " ";
+        let botonEliminar = document.createElement("button");
+        botonEliminar.textContent = "Eliminar";
+        nuevoLi.appendChild(botonEliminar);
+        
+        botonEliminar.addEventListener("click", () => {
+            nuevoLi.remove();
+            console.log("Tarea eliminada");
+        });
+
+        obtLista5.appendChild(nuevoLi); // agregamos el li dentro del ul        
     }
     obtInput5.value = "";
 });
