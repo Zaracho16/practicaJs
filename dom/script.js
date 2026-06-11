@@ -1,18 +1,5 @@
 
-/*
-1) Obtener el h1 usando getElementById() y guardarlo en una variable.
-2) Cambiar el texto del h1 a:
-"Bienvenido Adri"
-3) Obtener el párrafo usando getElementById().
-4) Cambiar el texto del párrafo a:
-"Estoy aprendiendo DOM"
-5) Cambiar el color del h1 a rojo.
-6) Cambiar el color del párrafo a azul.
-7) Cambiar el tamaño del h1 a 40px.
-8) Cambiar el fondo del párrafo a yellow.
-9) Mostrar en consola la variable del h1.
-10) Mostrar en consola la variable del párrafo.
-*/
+// Tema 1
 
 let tituloh1 = document.getElementById("titulo");
 tituloh1.textContent = "Bienvenido Adri";
@@ -27,21 +14,7 @@ obtenerParrafo.style.background = "yellow";
 console.log(tituloh1);
 console.log(obtenerParrafo);
 
-/*
-    1) Obtener el botón con getElementById().
-    2) Obtener el h1 con getElementById().
-    3) Agregar un evento click al botón.
-    4) Cuando se haga click, cambiar el texto del h1 a:
-    "Botón presionado"
-    5) Mostrar en consola:
-    "Se hizo click"
-    6) Cambiar el color del h1 a verde cuando se haga click.
-    7) Cambiar el tamaño del h1 a 50px cuando se haga click.
-    8) Cambiar el fondo de la página a lightblue cuando se haga click.
-    9) Cambiar nuevamente el texto a:
-    "Evento ejecutado correctamente"
-    10) Mostrar en consola el elemento botón.
-*/
+// Tema 2
 
 let obtenerElementoh1 = document.getElementById("tituloMiPagina");
 let obtenerBoton = document.getElementById("botonCambiarTexto");
@@ -56,17 +29,7 @@ obtenerBoton.addEventListener("click", () => {
     console.log(obtenerBoton);
 });
 
-/*
-    1) Obtener el h1.
-    2) Obtener el input.
-    3) Obtener el botón.
-    4) Agregar un evento click al botón.
-    5) Cuando se haga click, mostrar en consola el valor escrito en el input.
-    6) Cambiar el texto del h1 a:
-    "Hola " + nombreIngresado
-    Ejemplo:
-    Hola Adri
-*/
+// Tema 3
 
 let obtenerIdTituloh1 = document.getElementById("tituloInput");
 let obtenerInput = document.getElementById("nombre");
@@ -75,4 +38,39 @@ let obtenerBotonBtnSaludar = document.getElementById("btnSaludar");
 obtenerBotonBtnSaludar.addEventListener("click", () => {
     console.log(obtenerInput.value);
     obtenerIdTituloh1.textContent = "Hola " + obtenerInput.value;
+});
+
+// Tema 4
+
+let obtTitulo = document.getElementById("tituloh1-4");
+let obtenerNombreInput2 = document.getElementById("nombre2");
+let obtenerBtn2 = document.getElementById("btnSaludar4");
+
+obtenerBtn2.addEventListener("click", () => {
+    if(obtenerNombreInput2.value.trim() == "") {
+        obtTitulo.textContent = "Debe ingresar un nombre";
+        obtTitulo.style.color = "red";
+    } else {
+        obtTitulo.textContent = "Bienvenido " + obtenerNombreInput2.value;
+        obtTitulo.style.color = "green";
+        console.log(obtenerNombreInput2.value);
+        obtenerNombreInput2.value = "";
+    }
+});
+
+// Tema 5
+
+let obtInput5 = document.getElementById("tareaInputTema5");
+let obtBoton5 = document.getElementById("btnAgregarTema5");
+let obtLista5 = document.getElementById("listaUlTema5");
+
+obtBoton5.addEventListener("click", () => {
+    if(obtInput5.value.trim() == "") {
+        alert("Debe ingresar una tarea");
+    } else {
+        let nuevoLi = document.createElement("li");
+        nuevoLi.textContent = obtInput5.value;
+        obtLista5.appendChild(nuevoLi); // agregamos el li dentro del ul
+    }
+    obtInput5.value = "";
 });

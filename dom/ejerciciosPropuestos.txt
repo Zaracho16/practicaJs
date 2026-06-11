@@ -1,0 +1,79 @@
+
+-----Ejercicio 1-----
+1) Obtener el h1 usando getElementById() y guardarlo en una variable.
+2) Cambiar el texto del h1 a:
+    "Bienvenido Adri"
+3) Obtener el párrafo usando getElementById().
+4) Cambiar el texto del párrafo a:
+"Estoy aprendiendo DOM"
+5) Cambiar el color del h1 a rojo.
+6) Cambiar el color del párrafo a azul.
+7) Cambiar el tamaño del h1 a 40px.
+8) Cambiar el fondo del párrafo a yellow.
+9) Mostrar en consola la variable del h1.
+10) Mostrar en consola la variable del párrafo.
+
+
+-----Ejercicio 2-----
+1) Obtener el botón con getElementById().
+2) Obtener el h1 con getElementById().
+3) Agregar un evento click al botón.
+4) Cuando se haga click, cambiar el texto del h1 a:
+    "Botón presionado"
+5) Mostrar en consola:
+    "Se hizo click"
+6) Cambiar el color del h1 a verde cuando se haga click.
+7) Cambiar el tamaño del h1 a 50px cuando se haga click.
+8) Cambiar el fondo de la página a lightblue cuando se haga click.
+9) Cambiar nuevamente el texto a:
+    "Evento ejecutado correctamente"
+10) Mostrar en consola el elemento botón.
+
+
+-----Ejercicio 3-----
+1) Obtener el h1.
+2) Obtener el input.
+3) Obtener el botón.
+4) Agregar un evento click al botón.
+5) Cuando se haga click, mostrar en consola el valor escrito en el input.
+6) Cambiar el texto del h1 a:
+    "Hola " + nombreIngresado
+    Ejemplo:
+    Hola Adri
+
+
+-----Ejercicio 4-----
+1) Obtener el h1.
+2) Obtener el input.
+3) Obtener el botón.
+4) Agregar un evento click al botón.
+5) Si el input está vacío:
+Mostrar en el h1:
+    "Debe ingresar un nombre"
+6) Si el input tiene texto:
+    Mostrar:
+    "Bienvenido " + nombreIngresado
+7) Si el input está vacío:
+    Cambiar el color del h1 a red.
+8) Si el input tiene texto:
+    Cambiar el color del h1 a green.
+9) Mostrar en consola el valor ingresado.
+10) Limpiar el input después de hacer click.
+    Pista:
+    input.value = "";
+
+
+-----Ejercicio 5-----
+1) Obtener el input.
+2) Obtener el botón.
+3) Obtener la lista (ul).
+4) Agregar un evento click al botón.
+5) Leer el texto escrito en el input.
+6) Si está vacío:
+    Mostrar un alert indicando:
+    "Debe ingresar una tarea"
+7) Si tiene texto:
+    Crear un elemento li.
+8) Colocar dentro del li el texto ingresado.
+9) Agregar el li dentro del ul.
+10) Limpiar el input después de agregar la tarea.
