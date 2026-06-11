@@ -63,6 +63,7 @@ obtenerBtn2.addEventListener("click", () => {
 let obtInput5 = document.getElementById("tareaInputTema5");
 let obtBoton5 = document.getElementById("btnAgregarTema5");
 let obtLista5 = document.getElementById("listaUlTema5");
+let tareas = [];
 
 obtBoton5.addEventListener("click", () => {
     if(obtInput5.value.trim() == "") {
@@ -93,6 +94,11 @@ obtBoton5.addEventListener("click", () => {
                 console.log("Tarea pendiente");
             }
         });
+
+        // guardar las tareas en el array
+        tareas.push(obtInput5.value);
+        console.log(tareas);
+        console.log(`Tareas Registradas: ${tareas.length}`);
 
         obtLista5.appendChild(nuevoLi); // agregamos el li dentro del ul        
     }

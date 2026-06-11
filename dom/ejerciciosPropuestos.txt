@@ -107,8 +107,6 @@ Mostrar en el h1:
 5) Cuando se haga click:
     Agregar o quitar la clase:
     completada
-    Pista:
-    classList.toggle()
 6) Verificar que una tarea pueda marcarse y desmarcarse.
 7) Mantener funcionando el botón Eliminar.
 8) Mostrar en consola:
@@ -118,3 +116,24 @@ Mostrar en el h1:
     "Tarea pendiente"
     cuando se desmarque.
 10) Probar con varias tareas distintas.
+
+----Ejercicio 8----
+1) Crear:
+    let tareas = [];
+2) Cuando se agregue una tarea:
+    Guardar el texto dentro del array.
+3) Mostrar el array completo en consola.
+4) Seguir agregando la tarea al DOM como ya lo hacés.
+5) Verificar que varias tareas se acumulen dentro del array.
+    Ejemplo:
+    ["Estudiar JS", "Hacer ejercicio", "Leer"]
+6) Mostrar la cantidad de tareas.
+7) Mostrar en consola:
+    "Tareas registradas: X"
+8) Mantener funcionando:
+   - Agregar
+   - Completar
+   - Eliminar
+9) Si el usuario intenta agregar espacios solamente:
+   seguir mostrando el alert.
+10) Mostrar el array después de cada inserción.
