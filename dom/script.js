@@ -58,7 +58,7 @@ obtenerBtn2.addEventListener("click", () => {
     }
 });
 
-// Tema 5
+// Tema 5 y 6
 
 let obtInput5 = document.getElementById("tareaInputTema5");
 let obtBoton5 = document.getElementById("btnAgregarTema5");
@@ -70,6 +70,7 @@ obtBoton5.addEventListener("click", () => {
     } else {
         let nuevoLi = document.createElement("li");
         nuevoLi.textContent = obtInput5.value + " ";
+
         let botonEliminar = document.createElement("button");
         botonEliminar.textContent = "Eliminar";
         nuevoLi.appendChild(botonEliminar);
@@ -77,6 +78,20 @@ obtBoton5.addEventListener("click", () => {
         botonEliminar.addEventListener("click", () => {
             nuevoLi.remove();
             console.log("Tarea eliminada");
+        });
+
+        // Opcion de completado 
+        let btnCompletado = document.createElement("button");
+        btnCompletado.textContent = "Completado";
+        nuevoLi.appendChild(btnCompletado);
+        
+        btnCompletado.addEventListener("click", () => {
+            let tareaCompletada = nuevoLi.classList.toggle("completada");
+            if(tareaCompletada) {
+                console.log("Tarea completada");
+            } else {
+                console.log("Tarea pendiente");
+            }
         });
 
         obtLista5.appendChild(nuevoLi); // agregamos el li dentro del ul        

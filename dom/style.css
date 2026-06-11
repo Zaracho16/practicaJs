@@ -36,3 +36,8 @@ body {
     padding: 20px;
     border-radius: 5px;   
 }
+
+.completada {
+    text-decoration: line-through;
+    color: gray;
+}

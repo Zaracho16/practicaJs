@@ -95,3 +95,26 @@ Mostrar en el h1:
 10) Mostrar en consola:
     "Tarea eliminada"
     cuando se elimine una tarea.
+
+
+----Ejercicio 7----
+1) Seguir agregando tareas normalmente.
+2) Crear un segundo botón para cada tarea.
+    Texto:
+    "Completar"
+3) Agregar el botón dentro del mismo li.
+4) Agregar un evento click al botón Completar.
+5) Cuando se haga click:
+    Agregar o quitar la clase:
+    completada
+    Pista:
+    classList.toggle()
+6) Verificar que una tarea pueda marcarse y desmarcarse.
+7) Mantener funcionando el botón Eliminar.
+8) Mostrar en consola:
+    "Tarea completada"
+    cuando se marque.
+9) Mostrar en consola:
+    "Tarea pendiente"
+    cuando se desmarque.
+10) Probar con varias tareas distintas.
