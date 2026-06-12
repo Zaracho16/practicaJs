@@ -37,6 +37,13 @@ body {
     border-radius: 5px;   
 }
 
+.contenedorTema7 {
+    margin-top: 20px;
+    background-color: #b613e7;
+    padding: 20px;
+    border-radius: 5px;   
+}
+
 .completada {
     text-decoration: line-through;
     color: gray;

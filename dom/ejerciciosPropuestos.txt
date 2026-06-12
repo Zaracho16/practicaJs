@@ -137,3 +137,28 @@ Mostrar en el h1:
 9) Si el usuario intenta agregar espacios solamente:
    seguir mostrando el alert.
 10) Mostrar el array después de cada inserción.
+
+
+----Ejercicio 9----
+1) Mantener todo funcionando.
+2) Cuando se elimine una tarea:
+    Eliminarla también del array.
+3) Mostrar el array actualizado.
+4) Mostrar la nueva cantidad de tareas.
+5) Verificar que el array y el DOM tengan siempre la misma información.
+
+
+----Ejercicio 10----
+1) Obtener el h1 usando querySelector().
+2) Obtener el párrafo usando querySelector().
+3) Obtener el botón usando querySelector().
+4) Agregar un evento click al botón.
+5) Cuando se haga click:
+   cambiar el texto del h1 a:
+   "querySelector funciona"
+6) Cambiar el color del h1 a blue.
+7) Cambiar el texto del párrafo a:
+   "Texto actualizado"
+8) Cambiar el color del párrafo a green.
+9) Mostrar en consola el h1.
+10) Mostrar en consola el párrafo.

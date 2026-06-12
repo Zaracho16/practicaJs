@@ -69,6 +69,9 @@ obtBoton5.addEventListener("click", () => {
     if(obtInput5.value.trim() == "") {
         alert("Debe ingresar una tarea");
     } else {
+
+        let textoTarea = obtInput5.value;
+
         let nuevoLi = document.createElement("li");
         nuevoLi.textContent = obtInput5.value + " ";
 
@@ -77,8 +80,14 @@ obtBoton5.addEventListener("click", () => {
         nuevoLi.appendChild(botonEliminar);
         
         botonEliminar.addEventListener("click", () => {
-            nuevoLi.remove();
-            console.log("Tarea eliminada");
+                let posicionTarea = tareas.indexOf(textoTarea);
+
+                if(posicionTarea !== -1) {
+                    tareas.splice(posicionTarea, 1);
+                    console.log(`Nueva cantidad de elementos ${tareas.length}`);
+                }
+                nuevoLi.remove();
+                console.log("Tarea eliminada");
         });
 
         // Opcion de completado 
@@ -103,4 +112,19 @@ obtBoton5.addEventListener("click", () => {
         obtLista5.appendChild(nuevoLi); // agregamos el li dentro del ul        
     }
     obtInput5.value = "";
+});
+
+// Tema 7
+
+let obtenerH1Tema7 = document.querySelector("#tituloTema7");
+let obtenerParrafoTema7 = document.querySelector(".mensajeTema7");
+let obtenerBotonTema7 = document.querySelector("#btnCambiarTema7");
+
+obtenerBotonTema7.addEventListener("click", () => {
+    obtenerH1Tema7.textContent = "queryselector funciona";
+    obtenerH1Tema7.style.color = "blue";
+    obtenerParrafoTema7.textContent = "Texto actualizado";
+    obtenerParrafoTema7.style.color = "green";
+    console.log(obtenerH1Tema7);
+    console.log(obtenerParrafoTema7);
 });
